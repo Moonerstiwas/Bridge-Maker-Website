@@ -1,20 +1,3 @@
-const form = document.querySelector(".contact-form");
-
-form?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const button = form.querySelector("button");
-  if (!button) return;
-
-  button.textContent = "Interest saved";
-  button.disabled = true;
-
-  setTimeout(() => {
-    button.textContent = "Send interest";
-    button.disabled = false;
-    form.reset();
-  }, 1800);
-});
-
 const videoDialog = document.querySelector(".video-dialog");
 const videoDialogTitle = document.querySelector("#video-dialog-title");
 const videoDialogClose = document.querySelector(".video-dialog-close");
@@ -48,7 +31,8 @@ document.addEventListener("keydown", (event) => {
 
 document.querySelectorAll(".product-card button").forEach((button) => {
   button.addEventListener("click", () => {
-    button.textContent = "Added to demo cart";
-    button.disabled = true;
+    const isAdded = button.getAttribute("aria-pressed") === "true";
+    button.setAttribute("aria-pressed", String(!isAdded));
+    button.textContent = isAdded ? "Add to wishlist" : "Added to wishlist";
   });
 });

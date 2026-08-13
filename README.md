@@ -1,15 +1,11 @@
 # Bridge Makers website
 
-Latest packaged version: August 9, 2026.
+Newest packaged version: August 13, 2026.
 
-This package includes the new hand-drawn Bridge Makers logo and the newest compact vertical Menu beneath the top-right button.
+## Upload to GitHub
 
-## Publish with GitHub Pages
+Upload everything inside this folder to the root of the existing GitHub repository. Allow GitHub to replace files with matching names, and commit the changes.
 
-1. Create or open a public GitHub repository.
-2. Upload all files and the `assets` folder from this package to the repository root.
-3. Open **Settings → Pages**.
-4. Choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then save.
+Keep the `assets` folder intact. `index.html` must remain at the repository root.
 
-GitHub will display the public website URL after deployment finishes.
+This version includes the About Us page, the five-item menu, expanded products and workshops, SWIS origin information, and the transparent official logo.
