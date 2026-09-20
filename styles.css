@@ -853,9 +853,11 @@ h3 {
   background: var(--teal);
 }
 
-.product-card button[aria-pressed="true"] {
-  color: var(--ink);
-  background: var(--gold);
+.product-card .store-button:disabled {
+  color: #6d5a4c;
+  background: #ead9c3;
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 .product-card button {

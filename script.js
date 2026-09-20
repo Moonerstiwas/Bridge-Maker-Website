@@ -28,11 +28,3 @@ document.addEventListener("keydown", (event) => {
     closeVideoDialog();
   }
 });
-
-document.querySelectorAll(".product-card button").forEach((button) => {
-  button.addEventListener("click", () => {
-    const isAdded = button.getAttribute("aria-pressed") === "true";
-    button.setAttribute("aria-pressed", String(!isAdded));
-    button.textContent = isAdded ? "Add to wishlist" : "Added to wishlist";
-  });
-});
